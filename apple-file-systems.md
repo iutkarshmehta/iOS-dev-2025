@@ -79,7 +79,3 @@ APFS includes other fundamental improvements that enhance performance and effici
 | **Native Encryption** | Built-in, granular encryption with single-key and multi-key options for files and metadata. | 🔒 Superior security and data privacy, with hardware acceleration on modern Macs. |
 | **Crash Protection** | Uses a copy-on-write metadata strategy to prevent corruption from system crashes or power failures. | 🔩 Increased data integrity and system reliability. |
 | **Sparse Files** | Allocates disk space only for non-empty portions of a file. | 💾 More efficient storage for files with large blank sections, like disk images. |
-
-## IV. 🔄 Discrepancy Report
-
-This documentation provides a high-level, conceptual overview of the Apple File System and how it integrates with existing Foundation framework APIs. It does not detail specific new or deprecated APIs related to APFS itself. The primary takeaway is that modern file system features are largely accessed transparently through established interfaces like `FileManager`, ensuring backward compatibility for developer code. No API discrepancies were noted.
