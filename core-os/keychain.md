@@ -77,3 +77,5 @@ A significant portion of the Keychain Services API, specifically the functions r
 ### ✅ Modern Approach
 
 The recommended and fully supported method for interacting with Keychain Services on all Apple platforms is to use the **`SecItem*` functions** (`SecItemAdd`, `SecItemCopyMatching`, `SecItemUpdate`, `SecItemDelete`). These functions operate on keychain items within the default keychain, providing a higher-level, more secure, and platform-agnostic API that does not require manual management of keychain files.[3, 5, 9]
+
+https://docs-assets.developer.apple.com/published/ad0bbbff6a49d15c0da8e31ef76adb08/media-2891902%402x.png
