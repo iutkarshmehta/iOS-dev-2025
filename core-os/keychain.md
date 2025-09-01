@@ -4,6 +4,8 @@
 
 Keychain Services is Apple's dedicated framework for securely storing small amounts of sensitive user data. It provides applications with a mechanism to save confidential information—such as passwords, cryptographic keys, credit card numbers, certificates, and secure notes—into an encrypted database known as a keychain.[1, 2] By leveraging the keychain, developers can free users from the burden of remembering complex credentials for various services, thereby encouraging better security practices.[1, 3]
 
+!(https://docs-assets.developer.apple.com/published/ad0bbbff6a49d15c0da8e31ef76adb08/media-2891902%402x.png)
+
 The framework, part of the broader `Security` framework, is designed with robust security principles [4]:
 *   **Encryption:** All data stored in the keychain is automatically encrypted by the operating system, protecting it from unauthorized access.[3]
 *   **Isolation:** On iOS, an application can only access its own keychain items or those explicitly shared with other applications within a designated app group. This sandboxing prevents apps from accessing each other's sensitive data.[4, 5]
@@ -77,5 +79,3 @@ A significant portion of the Keychain Services API, specifically the functions r
 ### ✅ Modern Approach
 
 The recommended and fully supported method for interacting with Keychain Services on all Apple platforms is to use the **`SecItem*` functions** (`SecItemAdd`, `SecItemCopyMatching`, `SecItemUpdate`, `SecItemDelete`). These functions operate on keychain items within the default keychain, providing a higher-level, more secure, and platform-agnostic API that does not require manual management of keychain files.[3, 5, 9]
-
-https://docs-assets.developer.apple.com/published/ad0bbbff6a49d15c0da8e31ef76adb08/media-2891902%402x.png
