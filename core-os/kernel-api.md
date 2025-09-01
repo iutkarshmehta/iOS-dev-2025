@@ -1,5 +1,3 @@
-Of course. Here is the markdown text for the research report.
-
 # 📘 Apple Developer Documentation: Kernel
 
 ## I. Overview of the Kernel Framework
